@@ -1,0 +1,304 @@
+.nossa-historia {
+}
+
+.main-nossa-historia {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 109px 86px;
+}
+
+.title-historia h1 {
+  color: var(--black);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title-historia span {
+  color: var(--yellow, #dea251);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.p-main-one-historia {
+  width: 100%;
+  max-width: 516px;
+  margin-top: 56px;
+}
+
+.p-main-one-historia p {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.p-main-two-historia {
+  width: 100%;
+  background: var(--caqui);
+  margin-top: 56px;
+  padding: 33px 48px;
+}
+
+.p-main-two-historia p {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 546px;
+}
+
+.p-main-two-historia span {
+  color: var(--yellow, #dea251);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.p-main-three-historia {
+  width: 100%;
+  max-width: 516px;
+  margin-top: 56px;
+}
+
+.p-main-three-historia p {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.unidades {
+  display: flex;
+  gap: 58px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 688px;
+  margin-top: 56px;
+}
+
+.unidades-one {
+  width: 100%;
+  max-width: 148px;
+  text-align: center;
+}
+
+.unidades-one h3 {
+  color: var(--yellow);
+  font-size: 54px;
+  font-weight: 700;
+}
+
+.unidades-one .h3 {
+  color: var(--caqui);
+}
+
+.unidades-one span {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.historia-anos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 56px;
+}
+
+.historia-2020 {
+  padding: 5px 0px 5px 25px;
+  background: var(--caqui, #7f735e);
+}
+
+.historia-2020 h3 {
+  color: var(--white);
+  font-family: Lato;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.bg-change {
+  background: var(--gray, #888686);
+}
+
+@media (max-width: 1080px) {
+  .historia-2020,
+  .bg-change {
+    width: 80%;
+  }
+
+  .historia-2020 h3 {
+    font-size: 24px;
+  }
+
+  .main-nossa-historia {
+    padding: 0px 0px 60px 40px;
+  }
+
+  .title-historia span,
+  .p-main-one-historia p,
+  .p-main-two-historia p,
+  .p-main-two-historia span,
+  .p-main-three-historia p {
+    font-size: 18px;
+  }
+
+  .p-main-one-historia,
+  .p-main-three-historia {
+    max-width: 400px;
+  }
+
+  .p-main-two-historia {
+    padding: 20px 30px;
+    max-width: 430px;
+  }
+
+  .unidades {
+    gap: 40px;
+    max-width: 588px;
+  }
+
+  .unidades-one {
+    max-width: 130px;
+  }
+
+  .unidades-one h3 {
+    font-size: 44px;
+  }
+
+  .unidades-one span {
+    font-size: 16px;
+  }
+
+  .historia-anos {
+    gap: 10px;
+    margin-top: 40px;
+  }
+
+  .historia-2020 {
+    padding: 5px 0px 5px 15px;
+  }
+
+  .historia-2020 h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 990px) {
+  .title-historia {
+    margin-top: 0;
+  }
+
+  .main-nossa-historia {
+    padding: 40px 20px 40px 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p-main-two-historia {
+    max-width: 588px;
+  }
+
+  .title-historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .historia-2020,
+  .bg-change {
+    width: 100%;
+    padding-left: 260px;
+    padding-right: 260px;
+  }
+
+  .historia-2020 h3 {
+    font-size: 24px;
+  }
+
+  .unidades {
+    max-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 690px) {
+  .historia-2020,
+  .bg-change {
+    width: 100%;
+  }
+
+  .historia-2020 h3 {
+    font-size: 24px;
+  }
+
+  .main-nossa-historia {
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .p-main-two-historia {
+    max-width: 100%;
+
+    padding: 20px;
+  }
+
+  .title-historia {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .title-historia h1 {
+    font-size: 32px;
+  }
+
+  .title-historia span {
+    font-size: 16px;
+  }
+
+  .p-main-one-historia p,
+  .p-main-two-historia p,
+  .p-main-three-historia p {
+    font-size: 16px;
+  }
+
+  .unidades-one h3 {
+    font-size: 40px;
+  }
+
+  .unidades-one span {
+    font-size: 14px;
+  }
+
+  .historia-2020 {
+  }
+
+  .unidades {
+    gap: 20px;
+  }
+  .p-main-one-historia {
+    margin-top: 55px;
+  }
+  .p-main-one-historia,
+  .p-main-three-historia {
+    max-width: 100%;
+  }
+  .historia-2020,
+  .bg-change {
+    width: 100%;
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+}
+
+@media (max-width: 440px) {
+  .historia-2020,
+  .bg-change {
+    width: 100%;
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+
+  .historia-2020 h3 {
+    font-size: 20px;
+  }
+}

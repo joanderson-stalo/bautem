@@ -1,0 +1,129 @@
+.projetos {
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.projetos-title {
+  color: var(--black);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 145.5%;
+}
+
+.projetos-card-context {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin: 45px 50px 98px 50px;
+}
+
+.projetos-title-container {
+  margin: 45px 50px 0px 50px;
+}
+
+.projetos-card-duo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.projetos-btn {
+  padding: 9px 27px;
+  background: var(--caqui);
+  width: 383px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  margin-bottom: 68px;
+}
+
+.projetos-btn img {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projetos-btn:hover {
+  background: var(--yellow);
+  width: 440px;
+}
+
+.projetos-btn:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 1300px) {
+  .projetos-card-context {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .projetos-title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 800px) {
+  .projetos-btn {
+    width: 292px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    top: -20px;
+  }
+
+  .projetos-btn:hover {
+    width: 320px;
+    font-size: 16px;
+  }
+
+  .projetos-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .projetos-title {
+    font-size: 30px;
+  }
+
+  .projetos-card-duo-container {
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  .projetos-card-context {
+    margin: 45px 50px 70px 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projetos-title {
+    font-size: 24px;
+    width: 280px;
+  }
+  .projetos-btn {
+    width: 254px;
+    font-size: 16px;
+    padding: 5px 17px;
+  }
+
+  .projetos-btn:hover {
+    width: 282px;
+  }
+  .projetos-btn img {
+    width: 10px;
+    height: 10px;
+    left: 14px;
+  }
+}

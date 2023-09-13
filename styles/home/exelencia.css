@@ -1,0 +1,407 @@
+.excelencia {
+  height: 730px;
+  width: 100%;
+  background: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.excelencia-context-one {
+  display: flex;
+  align-items: center;
+  height: 238px;
+  padding-top: 66px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.excelencia-context-one p {
+  color: var(--black);
+  font-size: 60px;
+  font-weight: 700;
+  width: 100%;
+  max-width: 700px;
+}
+
+.background-image {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 1;
+  height: 706px;
+}
+
+.exelecia-img1 {
+  position: relative;
+  top: 86px;
+  left: 160px;
+}
+
+.exelecia-img2 {
+  position: relative;
+  width: 319px;
+  height: 356px;
+  top: 110px;
+  left: 120px;
+}
+
+.excelencia-context-two {
+  display: flex;
+
+  height: 438px;
+  background: var(--black);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.exelecia-text-context {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+}
+
+.exelecia-text-context p {
+  color: var(--yellow);
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.exelecia-container-span {
+  display: flex;
+  flex-direction: column;
+  margin: 46px 20px 0 0;
+  gap: 20px;
+}
+
+.exelecia-container-span span {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.exelecia-btn {
+  padding: 9px 27px;
+  background: var(--caqui);
+  width: 383px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  top: 45px;
+  left: 160px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.exelecia-btn img {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  opacity: 0;
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.exelecia-btn:hover {
+  background: var(--yellow);
+  width: 440px;
+}
+
+.exelecia-btn:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 1300px) {
+  .exelecia-img1 {
+    left: 50px;
+  }
+  .exelecia-img2 {
+    left: 0px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .excelencia {
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .excelencia-context-one {
+    justify-content: initial;
+    padding-top: 0px;
+    height: auto;
+  }
+  .excelencia-context-one p {
+    position: relative;
+    left: -10px;
+    font-size: 26px;
+    max-width: 300px;
+    margin-top: 80px;
+  }
+
+  .exelecia-text-context {
+    position: relative;
+    left: 26px;
+  }
+
+  .exelecia-text-context p {
+    font-size: 26px;
+  }
+
+  .exelecia-container-span {
+    margin: 26px 20px 0 0;
+  }
+  .exelecia-container-span span {
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+  }
+
+  .excelencia-context-two {
+    justify-content: initial;
+    height: 310px;
+  }
+  .exelecia-img1 {
+    width: 227px;
+    height: 208px;
+    left: 710px;
+  }
+  .exelecia-img2 {
+    left: 670px;
+    width: 190px;
+    height: 204px;
+    top: 80px;
+  }
+
+  .background-image {
+    top: 74px;
+    height: 490px;
+  }
+}
+
+@media (max-width: 960px) {
+  .exelecia-img1 {
+    width: 227px;
+    height: 208px;
+    left: 590px;
+  }
+  .exelecia-img2 {
+    left: 558px;
+    width: 190px;
+    height: 204px;
+    top: 70px;
+  }
+
+  .excelencia-context-one p {
+    left: -70px;
+  }
+
+  .exelecia-text-context {
+    left: -33px;
+  }
+
+  .excelencia-context-one p {
+    margin-top: 112px;
+  }
+}
+
+@media (max-width: 830px) {
+  .exelecia-img1 {
+    width: 227px;
+    height: 208px;
+    left: 590px;
+  }
+  .exelecia-img2 {
+    left: 558px;
+    width: 190px;
+    height: 204px;
+    top: 70px;
+  }
+}
+
+@media (max-width: 820px) {
+  .exelecia-img1 {
+    left: 286px;
+    top: -125px;
+    width: 280px;
+    height: 264px;
+    object: cover;
+  }
+
+  .exelecia-img2 {
+    left: 524px;
+    top: -239px;
+    width: 218px;
+    height: 264px;
+  }
+
+  .excelencia-context-one p {
+    left: -160px;
+    margin-top: 160px;
+    font-size: 30px;
+    max-width: 420px;
+  }
+
+  .background-image {
+    left: -44px;
+  }
+
+  .exelecia-text-context p {
+    font-size: 30px;
+  }
+
+  .exelecia-container-span span {
+    font-size: 20px;
+    max-width: 540px;
+  }
+
+  .excelencia-context-two {
+    height: 385px;
+  }
+  .exelecia-text-context {
+    left: -98px;
+  }
+
+  .background-image {
+    height: 540px;
+  }
+}
+
+@media (max-width: 788px) {
+  .exelecia-img1 {
+    top: -185px;
+    left: 68px;
+    width: 260.415px;
+    height: 188px;
+  }
+  .exelecia-img2 {
+    top: -326px;
+    left: 288px;
+    width: 191.758px;
+    height: 214px;
+  }
+
+  .excelencia-context-one p {
+    font-size: 24px;
+    max-width: 358px;
+    left: -132px;
+    transform: translate(10%, -50%);
+  }
+
+  .exelecia-text-context {
+    left: -56px;
+
+    position: relative;
+  }
+
+  .exelecia-text-context p {
+    font-size: 24px;
+  }
+
+  .exelecia-container-span span {
+    font-size: 16px;
+    max-width: 237px;
+  }
+
+  .background-image {
+    left: -40px;
+    top: -24px;
+  }
+
+  .exelecia-btn {
+    position: absolute;
+    top: 50px;
+    left: 38%;
+    transform: translateX(-50%);
+    padding: 9px 27px;
+    width: 238px;
+    font-size: 16px;
+    top: 370px;
+  }
+
+  .exelecia-btn:hover {
+    width: 262px;
+  }
+
+  .exelecia-btn:hover img {
+    width: 14px;
+    height: 14px;
+    left: 26px;
+  }
+
+  .excelencia-context-two {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 510px) {
+  .exelecia-img1 {
+    left: 36px;
+  }
+
+  .exelecia-img2 {
+    top: -338px;
+    left: 229px;
+  }
+
+  .excelencia-context-one p {
+    font-size: 20px;
+  }
+
+  .exelecia-text-context p {
+    font-size: 20px;
+  }
+
+  .exelecia-text-context {
+    left: -42px;
+  }
+}
+
+@media (max-width: 414px) {
+  .exelecia-img1 {
+    width: 173.415px;
+    height: 150px;
+    top: -126px;
+    left: 32px;
+  }
+
+  .exelecia-img2 {
+    width: 147.758px;
+    height: 173px;
+    top: -262px;
+    left: 188px;
+  }
+
+  .background-image {
+    left: -70px;
+  }
+  .excelencia-context-one p {
+    left: -88px;
+  }
+
+  .exelecia-btn {
+    top: 370px;
+  }
+}
+
+@media (max-width: 390px) {
+  .excelencia-context-one p {
+    font-size: 17px;
+  }
+  .exelecia-text-context p {
+    font-size: 17px;
+  }
+
+  .exelecia-btn {
+    top: 366px;
+  }
+  .exelecia-container-span span {
+    font-size: 13px;
+  }
+}

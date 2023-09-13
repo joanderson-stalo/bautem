@@ -1,0 +1,247 @@
+.conheca-img{
+  display: flex;
+  gap: 15px;
+}
+
+.container-conheca-img2{
+  display: flex;
+  gap: 15px;
+  margin-top: 18px;
+}
+
+.container-img2{
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.conheca-container3{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.container-conheca-img .img1-conheca {
+  width: 100%;
+  max-width: 688px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.container-conheca-img .img2-conheca {
+  width: 100%;
+  max-width: 155px;
+  height: 169px;
+  object-fit: cover;
+}
+
+.container-conheca-img .img4-conheca {
+  width: 100%;
+  max-width: 189px;
+  height: 356px;
+  object-fit: cover;
+}
+
+.container-conheca-img .img5-conheca {
+  width: 100%;
+  max-width: 312px;
+  height: 356px;
+  object-fit: cover;
+}
+
+.conheca-container3 .img6-conheca {
+  width: 100%;
+  max-width: 234px;
+  height: 312px;
+  object-fit: cover;
+}
+
+.conheca-container3 .img7-conheca {
+  width: 100%;
+  max-width: 234px;
+  height: 261px;
+  object-fit: cover;
+}
+
+.conheca-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 65px;
+}
+
+
+@media (max-width: 1439px){
+  
+  .container-conheca-img .img1-conheca{
+    max-width: 586px;
+    height: 184px;
+  }
+
+  .container-conheca-img .img2-conheca{
+    max-width: 130px;
+    height: 142px;
+  }
+
+  .container-conheca-img .img4-conheca{
+    max-width: 160px;
+    height: 302px;
+  }
+
+  .container-conheca-img .img5-conheca{
+    max-width: 264px;
+    height: 303px;
+  }
+
+  .conheca-container3 .img6-conheca{
+    max-width: 172px;
+    height: 230px;
+  }
+
+  .conheca-container3 .img7-conheca{
+    max-width: 172px;
+  }
+}
+
+@media (max-width: 1100px){
+  .conheca-img{
+    flex-direction: column;
+  }
+
+  .conheca-container3{
+    flex-direction: row;
+  }
+
+  .conheca-container3 .img6-conheca {
+    max-width: 280px;
+    height: 204px;
+    object-fit: cover;
+}
+
+.conheca-container3 .img7-conheca {
+  max-width: 280px;
+  height: 204px;
+  object-fit: cover;
+}
+
+.conheca-container3{
+  gap: 24px;
+}
+}
+
+@media (max-width: 910px){
+  .container-conheca-img .img1-conheca{
+    max-width: 386px;
+    height: 122px;
+  }
+
+  .container-conheca-img .img2-conheca {
+    max-width: 100px;
+    height: 108px;
+}
+
+.container-conheca-img .img4-conheca {
+  max-width: 120px;
+  height: 226px;
+}
+
+.container-conheca-img .img5-conheca {
+  max-width: 147px;
+  height: 227px;
+}
+
+.conheca-container3 .img6-conheca {
+  max-width: 181px;
+  height: 204px;
+}
+
+.conheca-container3 .img7-conheca {
+  max-width: 181px;
+  height: 204px;
+}
+
+
+.container-conheca-img2{
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.container-img2{
+  gap: 10px;
+}
+
+.conheca-img{
+  gap: 10px;
+}
+
+.conheca-btn{
+  margin-top: 44px;
+}
+}
+
+
+
+@media (max-width: 460px) {
+  .container-conheca-img .img1-conheca {
+      max-width: 270.2px;  
+      height: 85.4px;      
+  }
+
+  .container-conheca-img .img2-conheca {
+      max-width: 70px;    
+      height: 75.6px;      
+  }
+
+  .container-conheca-img .img4-conheca {
+      max-width: 84px;     
+      height: 158.2px;     
+  }
+
+  .container-conheca-img .img5-conheca {
+      max-width: 102.9px;  
+      height: 158.9px;   
+  }
+
+  .conheca-container3 .img6-conheca {
+      max-width: 126.7px;  
+      height: 142.8px;   
+  }
+
+  .conheca-container3 .img7-conheca {
+      max-width: 126.7px;  
+      height: 142.8px;     
+  }
+}
+
+
+@media (max-width: 360px) {
+  .container-conheca-img .img1-conheca {
+      max-width: 243.18px; 
+      height: 76.86px;     
+  }
+
+  .container-conheca-img .img2-conheca {
+      max-width: 63px;   
+      height: 68.04px;      
+  }
+
+  .container-conheca-img .img4-conheca {
+      max-width: 75.6px;    
+      height: 142.38px;     
+  }
+
+  .container-conheca-img .img5-conheca {
+      max-width: 92.61px;   
+      height: 143.01px;     
+  }
+
+  .conheca-container3 .img6-conheca {
+      max-width: 114.03px;  
+      height: 128.52px;     
+  }
+
+  .conheca-container3 .img7-conheca {
+      max-width: 114.03px; 
+      height: 128.52px;     
+  }
+}

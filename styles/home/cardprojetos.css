@@ -1,0 +1,145 @@
+.projetos-card{
+  width: 100%;
+  max-width:590px;
+  height: 276px;
+  background: var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  margin: 0 10px;
+}
+
+.projetos-card-img{
+  width: 292px;
+  height: 276px;
+}
+
+.projetos-card-container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 36px;
+  margin-right: 44px;
+  position: relative;
+  text-align: start;
+}
+
+.projetos-card-text{
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.projetos-card-p{
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.button-projetos {
+  bottom: -16px;
+  position: absolute;
+  background: var(--caqui);
+  padding: 9px 27px;
+  width: 111px;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.button-projetos img {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  opacity: 0;
+  width: 20px;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.button-projetos:hover {
+  background: var(--yellow);
+  width: 140px;
+}
+
+.button-projetos:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 800px){
+  .projetos-card{
+    max-width: 400px;
+    height: 220px;
+  }
+  .projetos-card-img{
+    width: 180px;
+    height: 220px;
+  }
+  .projetos-card-text{
+    font-size: 14px;
+  }
+  .projetos-card-p{
+    font-size: 12px;
+  }
+  .projetos-card-container2{
+    margin-left: 16px;
+    margin-right: 16px;
+  } 
+
+  .button-projetos{
+    padding: 9px 7px;
+    width: 78px;
+    font-size: 12px;
+  }
+
+  .button-projetos:hover{
+    width: 118px;
+  }
+
+  .button-projetos img{
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+@media (max-width: 600px){
+  .projetos-card{
+    width: 334px;
+height: 166.434px;
+  }
+
+  .projetos-card-img{
+    height: 166.434px;
+    object-fit: cover;
+  }
+
+  .projetos-card-text{
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  .projetos-card-p{
+    font-size: 10px;
+  }
+
+  .button-projetos{
+    font-size: 10px;
+    width: 71px;
+    padding: 5px 15px;
+    bottom: -10px;
+  }
+  .button-projetos:hover{
+    width: 90px;
+  }
+
+  .button-projetos img{
+    width: 10px;
+    height: 10px;
+    left: 8px;
+  }
+}

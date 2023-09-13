@@ -1,0 +1,272 @@
+.principal {
+  position: relative;
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+  margin-top: 70px;
+}
+
+.principal-img {
+  width: 100%;
+}
+
+.principal-img img {
+  width: 100%;
+}
+
+.principal-context {
+  width: 100%;
+  position: absolute;
+  bottom: -90px;
+  display: flex;
+  align-items: center;
+}
+
+.principal-card {
+  position: relative;
+  width: 100%;
+  max-width: 685px;
+  background: var(--caqui);
+  padding: 30px 149px;
+}
+
+.principal-card-text {
+  width: 100%;
+}
+
+.principal-card-text p {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 500;
+  width: 450px;
+}
+
+.principal-card-text span {
+  color: var(--black);
+  font-size: 40px;
+  font-weight: 700;
+  width: 450px;
+}
+
+.dot-container {
+  position: relative;
+  display: inline-block;
+  z-index: 6;
+  top: -8px;
+  left: 30%;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+}
+
+#dot1 {
+  left: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#dot2 {
+  left: 51px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#dot3 {
+  left: 102px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.principal-card-btn {
+  padding: 9px 27px;
+  width: 256px;
+  height: 47px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+
+  z-index: 5;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: width 0.3s ease;
+
+  position: absolute;
+
+  left: 90%;
+  top: 45%;
+}
+
+.principal-card-btn img {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  opacity: 0;
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+
+.principal-card-btn:hover {
+  background: var(--yellow);
+  width: 290px;
+}
+
+.principal-card-btn:hover img {
+  opacity: 1;
+}
+
+@media (max-width: 1228px) {
+  .dot-container {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .dot-container {
+    left: 20%;
+  }
+}
+
+@media (max-width: 1072px) {
+  .dot-container {
+    left: 10%;
+  }
+  .principal-card-btn {
+    bottom: 0;
+    top: 90%;
+    left: 77%;
+  }
+}
+
+@media (max-width: 964px) {
+  .principal-card {
+    max-width: 560px;
+    padding: 24px 100px;
+  }
+  .principal-card-text p {
+    font-size: 30px;
+  }
+  .principal-card-text span {
+    font-size: 30px;
+  }
+
+  .principal-context {
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 830px) {
+  .principal {
+    margin-bottom: 100px;
+  }
+  .principal-context {
+    position: initial;
+    flex-direction: column;
+    padding: 0 0;
+  }
+  .principal-card {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px 10px;
+  }
+  .principal-card-btn {
+    left: 28%;
+  }
+
+  .principal-card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .principal-card-text p {
+    font-size: 16px;
+    width: 330px;
+    margin-bottom: 20px;
+  }
+
+  .principal-card-text span {
+    font-size: 16px;
+    width: 330px;
+    margin-bottom: 20px;
+  }
+
+  .principal-card-btn {
+    top: 80%;
+  }
+
+  .dot {
+    height: 18px;
+    width: 18px;
+  }
+  #dot2 {
+    left: 25px;
+  }
+
+  #dot3 {
+    left: 50px;
+  }
+  .dot-container {
+    top: -106px;
+  }
+  .principal-card-btn {
+    width: 210px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .principal-card-btn:hover {
+    width: 220px;
+  }
+
+  .principal-card-btn img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .principal-card-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+  }
+}
+
+@media (max-width: 566px) {
+  .principal-img img {
+    height: 394px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .principal {
+    margin-bottom: 90px;
+  }
+}
+
+@media (max-width: 820px) {
+  .principal {
+    margin-bottom: 210px;
+  }
+}
+
+@media (max-width: 820px) {
+  .principal {
+    margin-bottom: 260px;
+  }
+}
+
+@media (max-width: 414px) {
+  .principal {
+    margin-bottom: 178px;
+  }
+}

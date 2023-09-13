@@ -1,0 +1,106 @@
+.cards-conceito {
+  display: flex;
+  flex-direction: row;
+  gap: 31px;
+}
+
+.card-conceito {
+  background: var(--caqui);
+
+  width: 100%;
+  max-width: 268px;
+
+  padding: 40px 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.gray-bg {
+  background: var(--gray);
+}
+
+.card-conceito h3 {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-conceito p {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.p-card-conceito {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 56px;
+}
+
+.p-card-conceito p {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 1210px) {
+  .card-conceito {
+    max-width: 214.4px;
+    padding: 32px 24px;
+  }
+
+  .card-conceito h3 {
+    font-size: 16.2px;
+  }
+
+  .card-conceito p,
+  .p-card-conceito p {
+    font-size: 16.2px;
+  }
+}
+
+@media (max-width: 1109px) {
+  .card-conceito {
+    max-width: 200.52px;
+    padding: 25.6px 19.2px;
+  }
+
+  .card-conceito h3,
+  .card-conceito p,
+  .p-card-conceito p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 990px) {
+  .p-card-conceito p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards-conceito {
+    gap: 0px;
+  }
+  .p-card-conceito p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .card-conceito {
+    max-width: 140px;
+    padding: 15px 12px;
+  }
+
+  .card-conceito h3,
+  .card-conceito p {
+    font-size: 10px;
+  }
+
+  .p-card-conceito p {
+    font-size: 14px;
+  }
+}

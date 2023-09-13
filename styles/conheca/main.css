@@ -1,0 +1,150 @@
+.main-conheca{
+  display: flex;
+  padding: 81px 13px 0px 86px;
+  width: 100%;
+  background: #fff
+}
+
+
+.conteudo-conheca-floresta{
+  padding-left: 91px;
+  display: none;
+  flex-direction: column;
+}
+
+.conteudo-conheca-floresta img {
+  width: 100%;
+  max-width: 206px;
+  height: 292px;
+  object-fit: cover;
+}
+
+.conheca-text{
+  width: 100%;
+  max-width: 670px;
+
+  margin: 56px 0px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.conheca-text p {
+  color: var(--black);
+font-family: Lato;
+font-size: 24px;
+font-weight: 500;
+}
+
+
+
+.projetos-btn {
+  padding: 9px 27px;
+  background: var(--black);
+  width: 100%;
+  max-width: 400px;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  margin-bottom: 65px;
+}
+
+.projetos-btn .img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.projetos-btn:hover {
+  background: var(--yellow);
+  max-width: 440px;
+}
+
+.projetos-btn:hover .img {
+  opacity: 1;
+}
+
+@media (max-width: 1439px){
+ 
+
+  .main-conheca {
+    padding: 60px 13px 0px 40px
+  }
+
+  .conteudo-conheca-floresta img {
+    max-width: 160px;
+    height: 228px;
+  }
+
+  .conheca-text{
+    gap: 30px;
+  }
+
+  .conheca-text p{
+    font-size: 18px;
+  }
+
+  .conteudo-conheca-floresta{
+    padding: 0px 5px 65px 65px ;
+  }
+
+}
+
+@media (max-width: 1100px){
+  .conheca-text{
+    max-width: 584px;
+  }
+}
+
+@media (max-width: 990px){
+  .main-conheca{
+    flex-direction: column;
+    padding: 40px 20px 0px 20px;
+  }
+  .conteudo-conheca-floresta{
+    padding: 60px 20px 65px 20px ;
+    justify-content: center;
+    align-items: center;
+  }
+  .projetos-btn{
+    font-size: 20px;
+  }
+  .projetos-btn .img{
+    width: 18px;
+    height: 18px;
+    left: 6px;
+  }
+}
+
+@media (max-width: 550px){
+  .conteudo-conheca-floresta img{
+    max-width: 120px;
+    height: 170px;
+  }
+  .conheca-text p{
+    font-size: 16px;
+  }
+  .projetos-btn{
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+
+
+
+  
+}
+
+
+
+

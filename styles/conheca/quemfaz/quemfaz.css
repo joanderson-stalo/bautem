@@ -1,0 +1,35 @@
+.quem-faz {
+  display: none;
+}
+
+.main-quemfaz{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 109px 86px;
+}
+
+.quem-faz h1{
+  color: var(--Black);
+font-size: 40px;
+font-weight: 700;
+}
+
+
+@media (max-width: 990px) {
+  .main-quemfaz{
+    padding: 40px 20px 40px 20px;
+    width: 100%;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .quem-faz h1{
+    font-size: 28px;
+  }
+}
+
+
+
+

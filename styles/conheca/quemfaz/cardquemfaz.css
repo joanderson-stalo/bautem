@@ -1,0 +1,156 @@
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.quem-faz .quemfaz-img {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.quemfaz-text-img {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quemfaz-img img {
+  width: 200px;
+  height: 206px;
+}
+
+.quem-faz-name {
+  display: flex;
+  width: 100%;
+  max-width: 440px;
+}
+
+.quem-faz-name h3 {
+  color: var(--yellow);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.quem-faz-name span {
+  color: var(--caqui);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.quemfaz-text-img p {
+  color: var(--Black);
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 518px;
+}
+
+@media (max-width: 1140px) {
+  .container-cards {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .quem-faz .quemfaz-img {
+    gap: 30px;
+  }
+
+  .quemfaz-text-img {
+    gap: 12px;
+  }
+
+  .quemfaz-img img {
+    width: 150px;
+    height: 156px;
+  }
+
+  .quem-faz-name {
+    max-width: 340px;
+  }
+
+  .quem-faz-name h3,
+  .quem-faz-name span {
+    font-size: 24px;
+  }
+
+  .quemfaz-text-img p {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-cards {
+    gap: 30px;
+  }
+
+  .quem-faz .quemfaz-img {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .quemfaz-text-img {
+    gap: 10px;
+  }
+
+  .quemfaz-img img {
+    width: 120px;
+    height: 126px;
+  }
+
+  .quem-faz-name {
+    max-width: 280px;
+  }
+
+  .quem-faz-name h3,
+  .quem-faz-name span {
+    font-size: 18px;
+  }
+
+  .quemfaz-text-img p {
+    font-size: 14px;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 440px) {
+  .container-cards {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .quem-faz .quemfaz-img {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; 
+  }
+
+  .quemfaz-text-img {
+    gap: 8px;
+  }
+
+  .quemfaz-img img {
+    width: 100px;
+    height: 106px;
+  }
+
+  .quem-faz-name {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .quem-faz-name h3,
+  .quem-faz-name span {
+    font-size: 18px;
+  }
+
+  .quemfaz-text-img p {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: flex-start;
+  }
+}

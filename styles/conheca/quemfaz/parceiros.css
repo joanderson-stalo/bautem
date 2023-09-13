@@ -1,0 +1,180 @@
+.quem-faz-parceiros {
+  margin-top: 56px;
+}
+
+.parceiros-one {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.parceiros-two {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.parcieros-insta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.parcieros-title {
+  width: 100%;
+  max-width: 396px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.parcieros-title h3 {
+  color: var(--Black);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.parcieros-title p {
+  color: var(--yellow, #dea251);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.parcieros-title span {
+  color: var(--black);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main-parceiros {
+  display: flex;
+  gap: 80px;
+  margin-top: 56px;
+}
+
+.h4-parceiro {
+  color: var(--caqui);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.a-parceiro {
+  color: var(--Black);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 1140px) {
+  .quem-faz-parceiros {
+    margin-top: 40px;
+  }
+
+  .parceiros-one,
+  .parceiros-two {
+    gap: 30px;
+  }
+
+  .parcieros-title {
+    max-width: 300px;
+    gap: 8px;
+  }
+
+  .parcieros-title h3 {
+    font-size: 32px;
+  }
+
+  .parcieros-title p,
+  .parcieros-title span {
+    font-size: 16px;
+  }
+
+  .main-parceiros {
+    margin-top: 40px;
+  }
+
+  .h4-parceiro,
+  .a-parceiro {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .quem-faz-parceiros {
+    margin-top: 30px;
+  }
+
+  .parceiros-one,
+  .parceiros-two {
+    gap: 20px;
+  }
+
+  .parcieros-insta {
+    gap: 6px;
+  }
+
+  .parcieros-title {
+    max-width: 280px;
+    gap: 6px;
+  }
+
+  .parcieros-title h3 {
+    font-size: 28px;
+  }
+
+  .parcieros-title p,
+  .parcieros-title span {
+    font-size: 14px;
+  }
+
+  .main-parceiros {
+    gap: 60px;
+    margin-top: 30px;
+  }
+
+  .h4-parceiro,
+  .a-parceiro {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 440px) {
+  .quem-faz-parceiros {
+    margin-top: 25px;
+  }
+
+  .parceiros-one,
+  .parceiros-two {
+    gap: 15px;
+  }
+
+  .parcieros-insta {
+    gap: 5px;
+  }
+
+  .parcieros-title {
+    max-width: 280px; 
+    gap: 5px;
+  }
+
+  .parcieros-title h3 {
+    font-size: 26px;
+  }
+
+  .parcieros-title p,
+  .parcieros-title span {
+    font-size: 13px; 
+  }
+
+  .main-parceiros {
+    gap: 40px; 
+    margin-top: 25px;
+  }
+
+  .h4-parceiro,
+  .a-parceiro {
+    font-size: 13px; 
+  }
+}

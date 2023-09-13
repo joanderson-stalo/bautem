@@ -1,0 +1,259 @@
+.empresas-parcerias h2{
+  color: var(--Black);
+font-size: 40px;
+font-weight: 700;
+}
+
+.empresas-logo{
+  width: 100%;
+  max-width: 770px;
+
+  margin-top: 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 47px; 
+  align-items: center;
+}
+
+.empresas-logo .americanas {
+  width: 185.162px;
+height: 53.173px;
+}
+
+.empresas-logo .bobs {
+  width: 105.969px;
+height: 53.173px;
+}
+
+.empresas-logo .drogasil{
+  width: 100%;
+  height: 38.173px;
+}
+
+.empresas-logo .caixa{
+  width: 185.162px;
+  height: 58.224px;
+}
+
+.empresas-logo .paguemenos{
+  height: 18.644px;
+}
+
+.empresas-logo .fip{
+  width: 196.476px;
+height: 92.77px;
+}
+
+.empresas-logo .liiv{
+  width: 89.355px;
+height: 45.424px;
+}
+
+.empresas-logo .unimed{
+  width: 178.751px;
+height: 63.732px;
+}
+
+.empresas-logo .smartfit{
+
+  height: 56.783px;
+
+}
+
+.empresas-logo .unicred{
+  width: 227.022px;
+  height: 30.385px;
+}
+
+@media (max-width: 1100px) {
+  .empresas-logo {
+    max-width: 650px;
+    gap: 27px; 
+  }
+
+  .empresas-logo img {
+    transform: scale(0.8);
+    width: 80%;
+  }
+
+  .empresas-logo .americanas {
+    width: 148.1296px;
+    height: 42.5384px;
+  }
+
+  .empresas-logo .bobs {
+    width: 84.7752px;
+    height: 42.5384px;
+  }
+
+  .empresas-logo .drogasil {
+    width: 100%;
+    height: 30.5384px;
+  }
+
+  .empresas-logo .caixa {
+    width: 148.1296px;
+    height: 46.5792px;
+  }
+
+  .empresas-logo .paguemenos {
+    height: 17.9152px;
+  }
+
+  .empresas-logo .fip {
+    width: 157.1808px;
+    height: 74.216px;
+  }
+
+  .empresas-logo .liiv {
+    width: 71.484px;
+    height: 36.3392px;
+  }
+
+  .empresas-logo .unimed {
+    width: 143.0008px;
+    height: 50.9856px;
+  }
+
+  .empresas-logo .smartfit {
+    height: 45.4264px;
+  }
+
+  .empresas-logo .unicred {
+    width: 181.6176px;
+    height: 24.308px;
+  }
+}
+
+@media (max-width: 990px) {
+  .empresas-logo{
+    justify-content: center;
+  }
+
+  .empresas-parcerias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .empresas-parcerias h2{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 440px) {
+  .empresas-logo {
+      max-width: 330px;
+      gap: 20px
+  }
+
+  .empresas-parcerias h2{
+    font-size: 25px;
+  }
+
+  .empresas-logo .americanas {
+      width: 129.6134px; 
+      height: 37.2211px;   
+  }
+
+  .empresas-logo .bobs {
+      width: 74.1783px;    
+      height: 37.2211px;  
+  }
+
+  .empresas-logo .drogasil {
+      width: 100%;         /* Retaining 100% width */
+      height: 26.7211px;   /* 38.173 * 0.7 */
+  }
+
+  .empresas-logo .caixa {
+      width: 129.6134px;   /* 185.162 * 0.7 */
+      height: 40.7568px;   /* 58.224 * 0.7 */
+  }
+
+  .empresas-logo .paguemenos {
+      height: 13.0508px;   /* 18.644 * 0.7 */
+  }
+
+  .empresas-logo .fip {
+      width: 137.5332px;   /* 196.476 * 0.7 */
+      height: 64.939px;    /* 92.77 * 0.7 */
+  }
+
+  .empresas-logo .liiv {
+      width: 62.5485px;    /* 89.355 * 0.7 */
+      height: 31.7968px;   /* 45.424 * 0.7 */
+  }
+
+  .empresas-logo .unimed {
+      width: 125.1257px;   /* 178.751 * 0.7 */
+      height: 44.6124px;   /* 63.732 * 0.7 */
+  }
+
+  .empresas-logo .smartfit {
+      height: 39.7481px;   
+  }
+
+  .empresas-logo .unicred {
+      width: 158.9154px;  
+      height: 21.2695px;   
+  }
+}
+
+
+@media (max-width: 360px) {
+  .empresas-logo {
+    max-width: 330px;
+    gap: 18px
+}
+
+
+  .empresas-logo .americanas {
+      width: 103.6907px;   
+      height: 29.7769px;  
+  }
+
+  .empresas-logo .bobs {
+      width: 59.3426px;    
+      height: 29.7769px;   
+  }
+
+  .empresas-logo .drogasil {
+      width: 100%;         
+      height: 21.3769px;   
+  }
+
+  .empresas-logo .caixa {
+      width: 103.6907px;   
+      height: 32.6054px;   
+  }
+
+  .empresas-logo .paguemenos {
+      height: 10.4406px;   
+  }
+
+  .empresas-logo .fip {
+      width: 110.0266px;  
+      height: 51.9512px;   
+  }
+
+  .empresas-logo .liiv {
+      width: 50.0388px;    
+      height: 25.4374px;   
+  }
+
+  .empresas-logo .unimed {
+      width: 100.1006px;  
+      height: 35.6899px;   
+  }
+
+  .empresas-logo .smartfit {
+      height: 31.7985px;   
+  }
+
+  .empresas-logo .unicred {
+      width: 127.1323px;   
+      height: 17.0156px;  
+  }
+}

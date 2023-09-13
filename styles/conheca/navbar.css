@@ -1,0 +1,140 @@
+.nav-conheca {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: start;
+  padding-right: 91px;
+  position: relative;
+}
+
+.nav-conheca::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 300px;
+  background: rgba(136, 134, 134, 0.5);
+}
+
+
+.nav-conheca button {
+  color: var(--gray);
+font-size: 32px;
+font-weight: 500;
+background: transparent;
+
+}
+
+.nav-conheca button.active {
+  color: var(--yellow);
+}
+
+@media (max-width: 1439px){
+  .nav-conheca{
+    padding-right: 35px;
+  }
+  .nav-conheca button{
+    font-size: 24px;
+  }
+
+  .nav-conheca::after{
+    height: 250px;
+  }
+}
+
+@media (max-width: 990px) {
+  .nav-conheca {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-conheca::before {
+    content: ''; 
+    position: absolute;
+    bottom: -10px; 
+    left: 50%;
+    width: 74%;  
+    height: 1px;
+    background: rgba(136, 134, 134, 0.5);
+    transform: translateX(-50%);
+  }
+
+  .nav-conheca::after {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-conheca{
+    gap: 28px;
+  }
+  .nav-conheca button{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav-conheca{
+    gap: 18px;
+  }
+  .nav-conheca button{
+    font-size: 14px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #888686;
+  z-index: 1000;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #fff; 
+  font-size: 24px;
+}
+
+
+.menu-button {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  background: transparent;
+}
+

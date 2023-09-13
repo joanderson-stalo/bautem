@@ -1,0 +1,56 @@
+.buttonwhats{
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 9999;
+}
+
+.buttonwhats button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--yellow, #DEA251);
+  box-shadow: 0px 2.9589040279388428px 2.9589040279388428px 0px rgba(0, 0, 0, 0.25);
+
+  color: var(--white, #F0F0F0);
+  font-family: Lato;
+  font-weight: 500;
+  padding: 13px 10px; 
+}
+
+.buttonwhats button::after {
+  content: ""; 
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 500;
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
+  visibility: hidden;
+}
+
+.buttonwhats:hover button::after {
+  content: "Fale com a Bauten"; 
+  opacity: 1; 
+  visibility: visible;
+ 
+}
+
+.buttonwhats:hover button{
+  gap: 20px;
+}
+
+
+@media (max-width: 1200px){
+  .buttonwhats button::after {
+    font-size: 14px;
+  }
+
+  .buttonwhats:hover button{
+    gap: 10px;
+  }
+  .buttonwhats img{
+    width: 20px;
+    height: 20px;
+  }
+}
