@@ -54,42 +54,7 @@ $(document).ready(function() {
   }, 10000);
 });
 
-$(document).ready(function() {
-  var cards = [
-    {image: '../assets/background/arcos.png', status: 'Lançamento', name: 'Arcos', location: 'Cabo Branco', city: 'João Pessoa/PB'},
-    {image: '../assets/background/reservacard.png', status: 'Lançamento', name: 'Reserva da Mata', location: 'Altiplano Cabo Branco', city: 'João Pessoa/PB'},
-    {image: '../assets/background/arua.png', status: 'Em Obras', name: 'Áurea', location: 'Cabo Branco', city: 'João Pessoa/PB'},
-  ];
 
-  function createCard(card) {
-    return `
-        <div class="card">
-            <div class="container">
-                <div class="card-img">
-                    <img src="${card.image}" alt="Imagem de Arco" />
-                    <button class="button-lancamento">${card.status}</button>
-                </div>
-                <div class="card-info">
-                    <span class="card-info-text">${card.name}</span>
-                    <span class="card-info-text-2">${card.location}</span>
-                    <span class="card-info-text-3">${card.city}</span>
-                </div>
-            </div>
-          
-
-
-        </div>
-    `;
-  }
-
-  //  <button class="button"> 
-  // <img src="../assets/arrow.svg" alt="">Conheça
-  // </button>
-
-  $.each(cards, function(index, card) {
-    $('.container-card-info').append(createCard(card));
-  });
-});
 
 
 $(document).ready(function(){
