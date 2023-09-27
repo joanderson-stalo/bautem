@@ -20,50 +20,58 @@ $(document).ready(function() {
 $(document).ready(function() {
   var images = ['../assets/background/reserva.png', '../assets/background/reserva2.png'];
   var texts = [
-    'Onde a natureza faz morada e você <span>descobre a plenitude.</span>',
-    'Através do movimento, construímos narrativas que dão <span>sentido à vida.</span>',
+      'Onde a natureza faz morada e você <span>descobre a plenitude.</span>',
+      'Através do movimento, construímos narrativas que dão <span>sentido à vida.</span>',
   ];
   var bgColors = ['#888686', '#7F735E']; 
 
-  var index = 0;
+  var currentImage = images[0];
 
   function switchDots() {
       if ($("#dot1").css("left") === "0px") {
-        $("#dot1").animate({left: '100px'}, 500);
-        $("#dot3").animate({left: '0px'}, 500);
+          $("#dot1").animate({left: '100px'}, 500);
+          $("#dot3").animate({left: '0px'}, 500);
       } else {
-        $("#dot1").animate({left: '0px'}, 500);
-        $("#dot3").animate({left: '50px'}, 500);
+          $("#dot1").animate({left: '0px'}, 500);
+          $("#dot3").animate({left: '50px'}, 500);
       }
 
       setTimeout(function() {
-        $("#dot1").attr("id", "dotTemp");
-        $("#dot3").attr("id", "dot1");
-        $("#dotTemp").attr("id", "dot3");
+          $("#dot1").attr("id", "dotTemp");
+          $("#dot3").attr("id", "dot1");
+          $("#dotTemp").attr("id", "dot3");
       }, 500);
   }
 
   function updateContent() {
-    $('.principal-img img').addClass('fade-up').one('animationend', function(){
-        $(this).removeClass('fade-up');
-    });
+      var imageIndex = images.indexOf(currentImage);
+      
+      $('.principal-img img').addClass('fade-up').one('animationend', function(){
+          $(this).removeClass('fade-up');
+      });
 
-    $('.principal-img img').attr('src', images[index]);
-    $('.principal-card-text p').html(texts[index]);
-    $('.principal-card').css('background', bgColors[index]); 
-}
+      $('.principal-img img').attr('src', currentImage);
+      $('.principal-card-text p').html(texts[imageIndex]);
+      $('.principal-card').css('background', bgColors[imageIndex]);
+  }
 
+  function getNextImage() {
+      var currentIndex = images.indexOf(currentImage);
+      var nextIndex = (currentIndex + 1) % images.length;
+      currentImage = images[nextIndex];
+  }
 
   updateContent();
 
   setInterval(function() {
-      index = (index + 1) % images.length;
+      getNextImage();
       updateContent();
       switchDots();
   }, 10000);
 
   $(window).resize(switchDots);
 });
+
 
 
 
