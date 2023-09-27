@@ -16,6 +16,7 @@
 
 .principal-img img {
   width: 100%;
+
 }
 
 .principal-context {
@@ -270,3 +271,22 @@
     margin-bottom: 178px;
   }
 }
+
+
+@keyframes fadeUp {
+  from {
+      opacity: 0.5;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation-name: fadeUp;
+  animation-duration: 3.5s;
+  animation-fill-mode: both;
+}
+

@@ -23,37 +23,47 @@ $(document).ready(function() {
     'Onde a natureza faz morada e você <span>descobre a plenitude.</span>',
     'Através do movimento, construímos narrativas que dão <span>sentido à vida.</span>',
   ];
-  
+  var bgColors = ['#888686', '#7F735E']; 
+
   var index = 0;
 
-  $('.principal-img img').attr('src', images[index]);
-  $('.principal-card-text p').html(texts[index]);
+  function switchDots() {
+      if ($("#dot1").css("left") === "0px") {
+        $("#dot1").animate({left: '100px'}, 500);
+        $("#dot3").animate({left: '0px'}, 500);
+      } else {
+        $("#dot1").animate({left: '0px'}, 500);
+        $("#dot3").animate({left: '50px'}, 500);
+      }
 
-  setInterval(function() {
-    index = (index + 1) % images.length;
+      setTimeout(function() {
+        $("#dot1").attr("id", "dotTemp");
+        $("#dot3").attr("id", "dot1");
+        $("#dotTemp").attr("id", "dot3");
+      }, 500);
+  }
+
+  function updateContent() {
+    $('.principal-img img').addClass('fade-up').one('animationend', function(){
+        $(this).removeClass('fade-up');
+    });
 
     $('.principal-img img').attr('src', images[index]);
     $('.principal-card-text p').html(texts[index]);
-    
-    $(window).resize(function() {
-      if ($(window).width() <= 830) {
-        $("#dot1").animate({left: '50px'}, 500);
-        $("#dot3").animate({left: '0px'}, 500);
-      }
-      else {
-        $("#dot1").animate({left: '0px'}, 500);
-        $("#dot3").animate({left: '102px'}, 500);
-      }
-    });
-    
-    setTimeout(function() {
-      $("#dot1").attr("id", "dotTemp");
-      $("#dot3").attr("id", "dot1");
-      $("#dotTemp").attr("id", "dot3");
-    }, 500);
-  }, 10000);
-});
+    $('.principal-card').css('background', bgColors[index]); 
+}
 
+
+  updateContent();
+
+  setInterval(function() {
+      index = (index + 1) % images.length;
+      updateContent();
+      switchDots();
+  }, 10000);
+
+  $(window).resize(switchDots);
+});
 
 
 
