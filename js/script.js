@@ -28,12 +28,15 @@ $(document).ready(function() {
   var currentImage = images[0];
 
   function switchDots() {
+      var offsetValue = $(window).width() <= 830 ? '50px' : '100px'; 
+      var halfOffset = $(window).width() <= 830 ? '25px' : '50px'; 
+
       if ($("#dot1").css("left") === "0px") {
-          $("#dot1").animate({left: '100px'}, 500);
+          $("#dot1").animate({left: offsetValue}, 500);
           $("#dot3").animate({left: '0px'}, 500);
       } else {
           $("#dot1").animate({left: '0px'}, 500);
-          $("#dot3").animate({left: '50px'}, 500);
+          $("#dot3").animate({left: halfOffset}, 500);
       }
 
       setTimeout(function() {
@@ -69,8 +72,11 @@ $(document).ready(function() {
       switchDots();
   }, 10000);
 
-  $(window).resize(switchDots);
+  $(window).resize(function() {
+      switchDots();
+  });
 });
+
 
 
 
